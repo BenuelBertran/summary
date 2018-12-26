@@ -1,0 +1,42 @@
+body {
+  width: 768px;
+  padding: 0 119px 0 113px;
+  margin: 0 auto;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: @lower-size;
+  line-height: @lower-height;
+  font-weight: @regular-weight;
+  color: @primary-darker76;
+  
+  background-color: @primary-darker53;
+  background-image: url(../img/main__bg.jpg);
+  background-position: top center;
+  
+  @media (min-width: @desktop) {
+    background-repeat: repeat-y;
+  }
+}  
+
+.title {
+  font-size: @bigger-size;
+  line-height: @big-height;
+  font-weight: @bold-weight;
+  color: @secondary;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

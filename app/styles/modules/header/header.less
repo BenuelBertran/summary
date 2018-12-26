@@ -1,0 +1,22 @@
+.header {
+  padding-top: 100px;
+  
+  &__secret {
+    position: relative;
+    
+    width: 768px;
+    
+    &::after {
+      position: absolute;
+      content: "";
+      top: -66px;
+      right: -66px;
+
+      width: 252px;
+      height: 106px;
+
+      background-image: url(../img/header-secret-pic.png);
+      background-repeat: no-repeat;
+    }  
+  }
+}

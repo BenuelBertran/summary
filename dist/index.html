@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page">
+    <header class="header page__header"><img class="header__logo" alt="">
+      <div class="header__secret"></div>
+    </header>
+    <main class="main page__main">
+      <h1 class="main__title"><img class="main__picture" src="img/main__title.png" width="221" height="118" alt="ДЕЛО"></h1>
+      <section class="summary main__summary">
+        <h2 class="visually-hidden summary__title">Информация о соискателе</h2>
+        <form class="form main__form" action="#" method="post">
+          <fieldset class="introduce form__group">
+            <ul class="introduce__list">
+              <li class="introduce__item">
+                <label class="introduce__label introduce__label--fullname" for="fullname-field"><span class="introduce__sub">Полное ФИО</span></label>
+                <input class="introduce__field introduce__field--fullname" type="text" name="fullname" placeholder="Иванов Иван Иванович" value="" maxlength="33" id="fullname-field">
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__label introduce__label--birthday" for="birthday-field">Год рождения</label>
+                <input class="introduce__field introduce__field--birthday" type="number" name="birthday" placeholder="1990" value="" min="1900" max="2002" id="birthday-field">
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__label introduce__label--address" for="address-field">Место жительства</label>
+                <input class="introduce__field introduce__field--address" type="text" name="address" placeholder="г. Иваново, Россия" value="" maxlength="30" id="address-field">
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__label introduce__label--skype" for="skype-field">Скайп</label>
+                <input class="introduce__field introduce__field--skype" type="text" name="skype" placeholder="ivanov" value="" maxlength="37" id="skype-field">
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__label introduce__label--email" for="email-field">Почта</label>
+                <input class="introduce__field introduce__field--email" type="email" name="email" placeholder="ivanov@gmail.com" value="" maxlength="37" id="email-field">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="skills form__group">
+            <legend class="title skills__title">Профессиональные навыки</legend>
+            <p class="skills__subtitle">Чекбоксами отмечены те навыки, которые освоены на достаточном уровне и регулярно используются в работе. Неотмеченные навыки находятся в процессе изучения в данный момент.</p>
+            <ul class="skills__list">
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="HTML" value="HTML/CSS" id="HTML-field" checked>
+                          <label class="skills__label" for="HTML-field">HTML/CSS</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="JS" value="JavaScript" id="JS-field" checked>
+                          <label class="skills__label" for="JS-field">JavaScript</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="BEM" value="БЭМ/OOCSS" id="BEM-field" checked>
+                          <label class="skills__label" for="BEM-field">БЭМ/OOCSS</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Pug" value="Pug (Jade)" id="Pug-field" checked>
+                          <label class="skills__label" for="Pug-field">Pug (Jade)</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Less" value="LESS/SASS/Stylus" id="Less-field" checked>
+                          <label class="skills__label" for="Less-field">LESS/SASS/Stylus</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="SVG" value="SVG/Canvas" id="SVG-field" checked>
+                          <label class="skills__label" for="SVG-field">SVG/Canvas</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="GRUNT" value="Gulp/GRUNT" id="GRUNT-field" checked>
+                          <label class="skills__label" for="GRUNT-field">Gulp/GRUNT</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Semantics" value="Соблюдаю семантику" id="Semantics-field" checked>
+                          <label class="skills__label" for="Semantics-field">Соблюдаю семантику</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Adaptive" value="Верстаю адаптивно" id="Adaptive-field" checked>
+                          <label class="skills__label" for="Adaptive-field">Верстаю адаптивно</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Accessibility" value="Accessibility (A11Y)" id="Accessibility-field" checked>
+                          <label class="skills__label" for="Accessibility-field">Accessibility (A11Y)</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Webpack" value="Webpack" id="Webpack-field">
+                          <label class="skills__label" for="Webpack-field">Webpack</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="WebGL" value="WebGL" id="WebGL-field">
+                          <label class="skills__label" for="WebGL-field">WebGL</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="ES" value="ES2015/ES2017" id="ES-field" checked>
+                          <label class="skills__label" for="ES-field">ES2015/ES2017</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="jQuery" value="jQuery/Bootstrap" id="jQuery-field" checked>
+                          <label class="skills__label" for="jQuery-field">jQuery/Bootstrap</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="React" value="Знаю React" id="React-field" checked>
+                          <label class="skills__label" for="React-field">Знаю React</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Angular" value="Знаю Angular/Vue" id="Angular-field">
+                          <label class="skills__label" for="Angular-field">Знаю Angular/Vue</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Node.js" value="Знаю Node.js" id="Node.js-field" checked>
+                          <label class="skills__label" for="Node.js-field">Знаю Node.js</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Git" value="Использую Git/SVN" id="Git-field" checked>
+                          <label class="skills__label" for="Git-field">Использую Git/SVN</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Git" value="WordPress/Bitrix" id="Git-field" checked>
+                          <label class="skills__label" for="Git-field">WordPress/Bitrix</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="Jira" value="Работал с Jira/Redmine" id="Jira-field" checked>
+                          <label class="skills__label" for="Jira-field">Работал с Jira/Redmine</label>
+                        </li>
+                        <li class="skills__item">
+                          <input class="skills__field visually-hidden" type="checkbox" name="english" value="У меня хороший английский" id="english-field" checked>
+                          <label class="skills__label" for="english-field">У меня хороший английский</label>
+                        </li>
+            </ul>
+          </fieldset>
+          <fieldset class="js-level form__group">
+            <legend class="title js-level__title">Уровень владения JavaScript</legend>
+            <div class="js-level__slider">
+              <div class="js-level__pin" tabindex="0"></div><img class="js-level__bar" src="img/slider-bar.png" width="774" height="60" alt="Прогрессивная шкала владения технологией JavaDcript">
+              <div class="js-level__options">
+                <p class="js-level__option">Не владею</p>
+                <p class="js-level__option">Использую готовые решения</p>
+                <p class="js-level__option">Использую готовые решения<br>и умею их переделывать</p>
+                <p class="js-level__option">Пишу сложный JS с нуля</p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="about-me form__group">
+            <legend class="title about-me__title">Пару слов о себе</legend>
+            <p class="about-me__subtitle"></p>
+            <ul class="about-me__list">
+              <li class="about-me__item">
+                <label class="about-me__underline">
+                  <input class="about-me__string" type="text" name="string" value="Активно занимаюсь Frontend разработкой." maxlength="42" placeholder="Ну-ууу-уу...">
+                </label>
+              </li>
+              <li class="about-me__item">
+                <label class="about-me__underline">
+                  <input class="about-me__string" type="text" name="string" value="Интересуюсь современными технологиями и" maxlength="42" placeholder="Ээээ...">
+                </label>
+              </li>
+              <li class="about-me__item about-me__item--js">
+                <label class="about-me__underline">
+                  <input class="about-me__string" type="text" name="string" value="космосом. Содержу мопса с забавным именем." maxlength="42">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="plans form__group">
+            <legend class="title plans__title">Планы на будущее</legend>
+            <p class="plans__subtitle">*Указанный план не является точным маршрутом, а лишь представляет из себя вектор развития, в котором  хотелось бы двигаться в светлое будущее (фронтенда).</p>
+            <ul class="plans__list">
+              <li class="plans__item">
+                <input class="plans__field visually-hidden" type="radio" name="plans" value="Верстать" id="layout-field">
+                <label class="plans__label plans__label--layout" for="layout-field">Верстать</label>
+              </li>
+              <li class="plans__item">
+                <input class="plans__field visually-hidden" type="radio" name="plans" value="Прокачиваться в JS" id="upgrade-field" checked>
+                <label class="plans__label plans__label--upgrade" for="upgrade-field">Прокачиваться в JS</label>
+              </li>
+              <li class="plans__item">
+                <input class="plans__field visually-hidden" type="radio" name="plans" value="Менеджерство" id="manage-field">
+                <label class="plans__label plans__label--manage" for="manage-field">Менеджерство</label>
+              </li>
+              <li class="plans__item">
+                <input class="plans__field visually-hidden" type="radio" name="plans" value="Захватить мир" id="other-field">
+                <label class="plans__label plans__label--other" for="other-field">Захватить мир</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="date form__group">
+            <label class="date__label" for="date-field">Дата заполнения</label>
+            <input class="date__field" type="text" name="date" placeholder="01.01.2016" value="" maxlength="10" id="date-field">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <script src="js/js-level.js"></script>
+    <script src="js/about-me.js"></script>
+  </body>
+</html>

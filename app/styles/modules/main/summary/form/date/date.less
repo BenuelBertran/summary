@@ -1,0 +1,41 @@
+.date {
+  padding-bottom: 75px;
+  
+  &__label {
+    position: relative;
+    top: 14px;
+    
+    padding-right: 6px;
+    
+    font-size: @big-size;
+    line-height: @big-height;
+    font-weight: @bold-weight;
+    color: @secondary;
+    
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: 185px;
+      
+      width: 206px;
+      height: 9px;
+      
+      background-image: url(../img/date-underline.png);
+    }
+  }
+  
+  &__field {
+    width: 209px;
+    padding: 0;
+    padding-left: 20px;
+    border: none;
+    
+    font-family: "Courier New", "monospaced";
+    font-size: @biggest-size;
+    line-height: @bigger-height;
+    color: @tertiary;
+    
+    background-color: transparent;
+  }
+}

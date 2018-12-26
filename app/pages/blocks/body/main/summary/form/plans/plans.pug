@@ -1,0 +1,16 @@
+fieldset(class="plans form__group")
+  legend(class="title plans__title") Планы на будущее
+  p(class="plans__subtitle") *Указанный план не является точным маршрутом, а лишь представляет из себя вектор развития, в котором  хотелось бы двигаться в светлое будущее (фронтенда).
+  ul(class="plans__list")
+    li(class="plans__item")
+      input(class="plans__field visually-hidden" type="radio" name="plans" value="Верстать" id="layout-field")
+      label(class="plans__label plans__label--layout" for="layout-field") Верстать
+    li(class="plans__item")
+      input(class="plans__field visually-hidden" type="radio" name="plans" value="Прокачиваться в JS" id="upgrade-field" checked)
+      label(class="plans__label plans__label--upgrade" for="upgrade-field") Прокачиваться в JS
+    li(class="plans__item")
+      input(class="plans__field visually-hidden" type="radio" name="plans" value="Менеджерство" id="manage-field")
+      label(class="plans__label plans__label--manage" for="manage-field") Менеджерство
+    li(class="plans__item")
+      input(class="plans__field visually-hidden" type="radio" name="plans" value="Захватить мир" id="other-field")
+      label(class="plans__label plans__label--other" for="other-field") Захватить мир

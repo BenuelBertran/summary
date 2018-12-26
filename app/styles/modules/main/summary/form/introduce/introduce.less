@@ -1,0 +1,148 @@
+.introduce {
+  width: 768px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+
+  &__item {
+    display: flex;
+  }
+
+  &__label {
+    position: relative;
+    
+    flex-shrink: 0;
+    
+    font-size: @big-size;
+    line-height: @big-height;
+    font-weight: @bold-weight;
+    color: @secondary;
+    
+    &--fullname {
+      padding-top: 11px;
+      padding-right: 14px;
+      
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -23px;
+        left: 125px;
+
+        width: 659px;
+        height: 59px;
+
+        background-image: url(../img/underline__fullname.png);
+        background-repeat: no-repeat;
+      }
+    }
+    
+    &--birthday {
+      padding-top: 15px;
+      padding-right: 13px;
+      
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -19px;
+        left: 152px;
+
+        width: 634px;
+        height: 59px;
+
+        background-image: url(../img/underline__birthday.png);
+        background-repeat: no-repeat;
+      }
+    }
+    
+    &--address {
+      padding-top: 12px;
+      padding-right: 14px;
+      
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -18px;
+        left: 185px;
+
+        width: 599px;
+        height: 59px;
+
+        background-image: url(../img/underline__address.png);
+        background-repeat: no-repeat;
+      }
+    }
+    
+    &--skype {
+      padding-top: 14px;
+      padding-right: 10px;
+      
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 11px;
+        left: 72px;
+
+        width: 700px;
+        height: 9px;
+
+        background-image: url(../img/underline__skype.png);
+        background-repeat: no-repeat;
+      }
+    }
+    
+    &--email {
+      padding-top: 14px;
+      padding-right: 10px;
+      
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 72px;
+
+        width: 700px;
+        height: 9px;
+
+        background-image: url(../img/underline__email.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__field {
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+    
+    font-family: "Courier New", "monospaced";
+    font-size: @biggest-size;
+    line-height: @normal-height;
+    color: @tertiary;
+    
+    background-color: transparent;
+    
+    &--fullname {
+      padding: 9px 18px 13px;
+    }
+    
+    &--birthday {
+      padding: 2px 18px 12px;
+    }
+    
+    &--address {
+      padding: 2px 18px 12px;
+    }
+    
+    &--skype {
+      padding: 5px 18px 12px;
+    }
+    
+    &--email {
+      padding: 1px 18px 14px;
+    }
+  }
+  
+  &__sub {
+    position: relative;
+    top: 5px;
+  }
+}

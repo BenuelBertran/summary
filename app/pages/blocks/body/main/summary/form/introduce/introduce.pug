@@ -1,0 +1,18 @@
+fieldset(class="introduce form__group")
+  ul(class="introduce__list")
+    li(class="introduce__item")
+      label(class="introduce__label introduce__label--fullname" for="fullname-field")
+        span(class="introduce__sub") Полное ФИО
+      input(class="introduce__field introduce__field--fullname" type="text" name="fullname" placeholder="Иванов Иван Иванович" value="" maxlength="33" id="fullname-field")
+    li(class="introduce__item")
+      label(class="introduce__label introduce__label--birthday" for="birthday-field") Год рождения
+      input(class="introduce__field introduce__field--birthday" type="number" name="birthday" placeholder="1990" value="" min="1900" max="2002" id="birthday-field")
+    li(class="introduce__item")
+      label(class="introduce__label introduce__label--address" for="address-field") Место жительства
+      input(class="introduce__field introduce__field--address" type="text" name="address" placeholder="г. Иваново, Россия" value="" maxlength="30" id="address-field")
+    li(class="introduce__item")
+      label(class="introduce__label introduce__label--skype" for="skype-field") Скайп
+      input(class="introduce__field introduce__field--skype" type="text" name="skype" placeholder="ivanov" value="" maxlength="37" id="skype-field")
+    li(class="introduce__item")
+      label(class="introduce__label introduce__label--email" for="email-field") Почта
+      input(class="introduce__field introduce__field--email" type="email" name="email" placeholder="ivanov@gmail.com" value="" maxlength="37" id="email-field")

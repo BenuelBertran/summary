@@ -1,0 +1,77 @@
+.skills {
+  width: 768px;
+  padding-bottom: 37px;
+  
+  &__title {
+    position: relative;
+    left: -2px;
+  }
+  
+  &__subtitle {
+    position: relative;
+    top: -3px;
+    
+    padding-bottom: 27px;
+  }
+  
+  &__list {
+    padding-left: 27px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 256px 270px 242px;
+    grid-template-rows: repeat(7, 35px);
+  }
+  
+  &__label {
+    font-size: @normal-size;
+    line-height: @low-height;
+    font-weight: @bold-weight;
+    color: @primary-darker100;
+  }
+  
+  &__link {
+    text-decoration: underline;
+  }
+  
+  &__sub {
+    position: relative;
+    top: 1px;
+  }
+
+  &__field + label {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: -27px;
+
+      width: 19px;
+      height: 18px;
+      
+      background-image: url(../img/checkbox.png);
+    }
+  }
+  
+  &__field:focus + label {
+    &::before {
+      box-shadow: 0 0 2px 1px @chrome-outline;
+    }
+  }
+  
+  &__field:checked + label {
+    &::after {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: -24px;
+
+      width: 21px;
+      height: 27px;
+      border-radius: 50%;
+
+      background-image: url(../img/tick.png);
+    }
+  }
+}
