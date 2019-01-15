@@ -1,33 +1,9 @@
 .about-me {
   padding-bottom: 34px;
   
-  &__subtitle {
+  &__field {
     width: 768px;
-//    padding-bottom: 24px;
-  }
-  
-  &__list {
-    padding-left: 3px;  
-  }
-  
-  &__underline {
-    position: relative;
-    
-    &::after {
-      position: absolute;
-      content: "";
-      top: -1px;
-      left: -7px;
-
-      width: 774px;
-      height: 60px;
-      
-      background-image: url(../img/string-underline.png);
-    }
-  }
-  
-  &__string {
-    width: 768px;
+    min-height: 60px;
     padding: 0;
     border: none;
     
@@ -36,6 +12,11 @@
     line-height: @bigger-height;
     color: @tertiary;
     
+    background-image: url(../img/string-underline.png);
+    background-position: -10px -98px;
     background-color: transparent;
+    
+    resize: none;
+    overflow: hidden;
   }
 }

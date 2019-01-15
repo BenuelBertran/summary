@@ -1,8 +1,8 @@
 {
-  "name": "cccsr",
+  "name": "summary",
   "version": "0.1.0",
   "private": true,
-  "description": "Test-quest v1.0",
+  "description": "Self job summary page",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "7.1.x",

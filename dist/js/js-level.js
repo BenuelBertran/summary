@@ -8,7 +8,7 @@
 var sliderPin = document.querySelector(".js-level__pin");
 
 sliderPin.addEventListener("mousedown", function(evt) {
-  var startCoodrs = {
+  var startCoords = {
     x: evt.clientX
   };
   
@@ -16,9 +16,9 @@ sliderPin.addEventListener("mousedown", function(evt) {
     evt.preventDefault();
     sliderPin.draggable = true;
     var shift = {
-      x: startCoodrs.x - evt.clientX
+      x: startCoords.x - evt.clientX
     };
-    startCoodrs = {
+    startCoords = {
       x: evt.clientX
     };
     if (sliderPin.offsetLeft - shift.x > 0 && sliderPin.offsetLeft - shift.x < 755) {
@@ -29,6 +29,7 @@ sliderPin.addEventListener("mousedown", function(evt) {
   var onMouseUp = function (evt) {
     evt.preventDefault();
     sliderPin.draggable = false;
+    
     document.removeEventListener("mousemove", onMouseMove);
     document.removeEventListener("mouseup", onMouseUp);
   };
@@ -44,6 +45,7 @@ var rightArrowKeycode = 39;
 var leftArrowKeycode = 37;
 
 sliderPin.addEventListener("keydown", function(evt) {
+  sliderLeft = sliderPin.offsetLeft;
   if (evt.keyCode === rightArrowKeycode) {
     if (sliderLeft < 755) {
       sliderLeft += 10;

@@ -656,33 +656,20 @@ body {
 .about-me {
   padding-bottom: 34px;
 }
-.about-me__subtitle {
+.about-me__field {
   width: 768px;
-}
-.about-me__list {
-  padding-left: 3px;
-}
-.about-me__underline {
-  position: relative;
-}
-.about-me__underline::after {
-  position: absolute;
-  content: "";
-  top: -1px;
-  left: -7px;
-  width: 774px;
-  height: 60px;
-  background-image: url(../img/string-underline.png);
-}
-.about-me__string {
-  width: 768px;
+  min-height: 60px;
   padding: 0;
   border: none;
   font-family: "Courier New", "monospaced";
   font-size: 30px;
   line-height: 60px;
   color: hsl(345, 6%, 13%);
+  background-image: url(../img/string-underline.png);
+  background-position: -10px -98px;
   background-color: transparent;
+  resize: none;
+  overflow: hidden;
 }
 .plans {
   padding-bottom: 68px;
